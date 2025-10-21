@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Path to your TFRecord (from earlier)
-FILENAME = Path(__file__).resolve().parents[1] / "training.tfrecord"
+FILENAME = Path("/home/contactashmeetsingh/WOMD-Reasoning/training_tfexample.tfrecord-00001-of-01000")
 print("Using:", FILENAME)
 
 # Load the first record
@@ -63,5 +63,5 @@ plt.legend(loc="upper right", fontsize=9)
 plt.tight_layout()
 
 # Save higher-quality image
-plt.savefig("scenario_plot_clear.png", dpi=400, bbox_inches="tight")
-print("✅ Saved improved plot as scenario_plot_clear.png")
+plt.savefig("scenario_plot_clear_dataset_2.png", dpi=400, bbox_inches="tight")
+print("✅ Saved improved plot as scenario_plot_clear_dataset_2.png")

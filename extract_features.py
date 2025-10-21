@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 from pathlib import Path
 
-FILENAME = Path(__file__).resolve().parents[1] / "training.tfrecord"
+FILENAME = Path("/home/contactashmeetsingh/WOMD-Reasoning/training_tfexample.tfrecord-00001-of-01000")
 dataset = tf.data.TFRecordDataset(str(FILENAME))
 raw = next(iter(dataset))
 example = tf.train.Example()
@@ -38,3 +38,7 @@ speed = np.sqrt(vx**2 + vy**2)
 print("✅ Positions loaded:", x.shape, y.shape)
 print("✅ Velocities loaded:", vx.shape, vy.shape)
 print("✅ Example speeds:", speed[:10])
+# ✅ Positions loaded: (11648,) (11648,)
+# ✅ Velocities loaded: (11648,) (11648,)
+# ✅ Example speeds: [6.27331498 6.00192259 5.99332842 5.81583145 5.7053656  5.56871898
+#  5.42096326 5.21240463 5.22403553 4.95930115]

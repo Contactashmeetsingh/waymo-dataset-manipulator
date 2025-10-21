@@ -2,7 +2,7 @@ from pathlib import Path
 import tensorflow as tf
 
 # Resolve training.tfrecord sitting one level above Prompts/
-FILENAME = (Path(__file__).resolve().parents[1] / "training.tfrecord")
+FILENAME = Path("/home/contactashmeetsingh/WOMD-Reasoning/training_tfexample.tfrecord-00001-of-01000")
 print("File path:", FILENAME)
 print("File exists?", FILENAME.exists())
 
