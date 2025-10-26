@@ -1,0 +1,30 @@
+# ===========================
+# Waymo Dataset Project Ignore Rules
+# ===========================
+
+# Large data files
+*.tfrecord
+*.parquet
+*.mp4
+*.avi
+*.mov
+*.zip
+*.tar.gz
+*.pkl
+*.npy
+*.npz
+
+# TensorFlow / training outputs
+*.ckpt
+*.pb
+events.out.tfevents.*
+
+# Local environment files
+__pycache__/
+*.pyc
+*.log
+*.DS_Store
+.vscode/
+.idea/
+.env
+waymo_env/
